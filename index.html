@@ -12,36 +12,39 @@
 <body>
 <header>
     <div class="header-top__menu">
-        <div class="container">
-            <div class="header-burger__menu">
-                <span></span>
-            </div>
-            <div class="row justify-content-between align-items-center">
-                <div class="col">
-                    <div class="burger-menu">
-                        <div class="header__nav">
-                            <ul class="d-flex flex-wrap item header-left">
-                                <li><a href="#">О компании</a></li>
-                                <li><a href="#">Доставка</a></li>
-                                <li><a href="#">Оплата</a></li>
-                                <li><a href="#">Возврат</a></li>
-                                <li><a href="#">Мероприятия</a></li>
-                                <li><a href="#">Новости</a></li>
-                                <li><a href="#">Контакты</a></li>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent" aria-controls="navbarContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <div class="col">
+                        <div class="p-4">
+                            <ul class="d-flex navbar-nav mr-auto flex-wrap item header-left">
+                                <li class="nav-item"><a href="#">О компании</a></li>
+                                <li class="nav-item"><a href="#">Доставка</a></li>
+                                <li class="nav-item"><a href="#">Оплата</a></li>
+                                <li class="nav-item"><a href="#">Возврат</a></li>
+                                <li class="nav-item"><a href="#">Мероприятия</a></li>
+                                <li class="nav-item"><a href="#">Новости</a></li>
+                                <li class="nav-item"><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header-r">
+                            <ul class="d-flex justify-content-lg-end justify-content-lg-start item header-right">
+                                <li class="nav-item"><a href="#" class="call-me">Перезвоните мнe</a></li>
+                                <li class="nav-item"><a href="#" class="icon-call__me"><img
+                                  src="img/login_2_icon5%201.png" alt=""></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-5">
-                    <div class="header-r">
-                        <ul class="d-flex justify-content-lg-end justify-content-lg-start item header-right">
-                            <li><a href="#" class="call-me">Перезвоните мнe</a></li>
-                            <li><a href="#" class="icon-call__me"><img src="img/login_2_icon5%201.png" alt=""></a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
-        </div>
+        </nav>
     </div>
     <!--header-center__menu-->
     <div class="header-center__menu">
