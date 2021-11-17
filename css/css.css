@@ -45,6 +45,18 @@
   header .header-top__menu {
     padding-top: 0;
   }
+
+  .header-center__menu {
+    display: none;
+  }
+
+  .m-buttom {
+    margin-top: 20px;
+  }
+
+  .title-discount {
+    font-size: 26px;
+  }
 }
 a:hover {
   color: #bebebf;
@@ -436,6 +448,15 @@ a {
   background-size: initial;
 }
 
+@media screen and (max-width: 992px) {
+  .slider-two .carousel-control-prev-icon {
+    right: 0;
+  }
+
+  .slider-two .carousel-control-next-icon {
+    left: 0;
+  }
+}
 .title {
   font-weight: bold;
   font-size: 16px;
