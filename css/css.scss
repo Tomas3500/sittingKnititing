@@ -278,6 +278,12 @@ a {
   margin-right: 18px;
 }
 
+@media screen and (max-width: 576px) {
+  .menu-accordion {
+    display: none;
+  }
+}
+
 //card-product
 
 .card-product {
@@ -699,3 +705,21 @@ a {
   }
 
 }
+
+@media screen and (max-width: 992px) {
+  .bestsellers__menu .menu ul li {
+    margin-right: 10px;
+  }
+  .bestsellers__menu .active-link {
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .menu ul li a img {
+    margin-right: 7px;
+  }
+}
+
+
+
