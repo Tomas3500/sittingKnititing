@@ -1,0 +1,418 @@
+$color-filter-red: #EB5757;
+$color-filter-orange: #F2994A;
+$color-filter-yellow: #F2C94C;
+$color-filter-green: #27AE60;
+$color-filter-green2: #6FCF97;
+$color-filter-blue: #2F80ED;
+$color-filter-purpur: #BB6BD9;
+$color-filter-grey: #4F4F4F;
+$color-filter-grey2: #333333;
+
+
+.next-links li a {
+  font-size: 12px;
+
+}
+
+.next-links li {
+  position: relative;
+  margin-right: 15px;
+}
+
+.next-links {
+  margin-top: 30px;
+}
+
+.line span {
+  background: black;
+  display: block;
+  height: 50%;
+  width: 1px;
+  position: absolute;
+  top: 35%;
+  right: -10px;
+  transform: skew(-0.06turn, 18deg);
+}
+
+.link-color {
+  color: #497952;
+}
+
+
+.block-icon a {
+  font-size: 12px;
+}
+
+//section 2
+.list-product {
+  margin-top: 30px;
+}
+
+.grid-filter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3fr;
+  grid-gap: 16px;
+  margin-top: 20px;
+}
+
+.grid-filter-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .item {
+    border: 2px solid #0a53be;
+  }
+}
+
+
+.item-1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: 1px solid #497952;
+  border-radius: 10px;
+  padding: 30px 30px 29px;
+
+  p {
+    font-size: 12px;
+  }
+}
+
+
+//.filter-product{
+//  display: grid;
+//  grid-template-columns: repeat(3, 1fr)
+//
+//}
+
+.view-filter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+
+}
+
+.i {
+  grid-column-start: 1;
+}
+
+
+.view-link__filter {
+  margin-bottom: 18px;
+
+  .see-all {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 10px;
+    color: #535353;
+    padding: 5px 11px;
+    background: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  a img {
+    margin-left: 7px;
+  }
+}
+
+.switch-block__filter {
+  p {
+    font-size: 12px;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+
+  /* The switch - the box around the slider */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+  }
+
+  /* Hide default HTML checkbox */
+  .switch input {
+    display: none;
+  }
+
+  /* The slider */
+  .slider-check {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider-check:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider-check {
+    background-color: #497952;
+  }
+
+  input:focus + .slider-check {
+    box-shadow: 0 0 1px #497952;
+  }
+
+  input:checked + .slider-check:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+  .slider-check.round {
+    border-radius: 34px;
+  }
+
+  .slider-check.round:before {
+    border-radius: 50%;
+  }
+}
+
+
+.center-filter {
+  border-bottom: 1px solid #497952;
+}
+
+//brands-check__filter
+.brands-check__filter {
+  margin-top: 21px;
+  font-size: 12px;
+
+  span {
+    font-size: 10px;
+    color: #D0D0D0;
+    font-weight: 500;
+    margin-left: 3px;
+  }
+
+  input {
+    margin-right: 5px;
+  }
+
+  input[type="checkbox"]:checked {
+    background: #497952;
+  }
+
+  a {
+    color: #497952;
+    font-size: 11px;
+
+    img {
+      margin-left: 5px;
+    }
+  }
+}
+
+
+///block-price__filter
+.block-price__filter {
+  input[type="text"] {
+    width: 56px;
+    border-radius: 30px;
+    border: 1px solid #D0D0D0;
+    font-size: 11px;
+    padding: 6px;
+    text-align: center;
+  }
+
+  p {
+    margin-right: 10px;
+  }
+}
+
+//slider
+#slider-padding {
+  margin-top: 20px;
+
+  .noUi-connect {
+    background: linear-gradient(270deg, #497952 0%, rgba(9, 196, 44, 0.47) 105.96%);
+  }
+
+  .noUi-handle {
+    border-radius: 50%;
+    //width: 20px;
+    //height: 20px;
+  }
+
+
+}
+
+//block-color__filter
+.block-color__filter {
+
+  .color input {
+    display: none;
+  }
+
+  .color {
+    position: relative;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #D0D0D0;
+  }
+
+
+  .boll-color:before {
+    content: "\2714";
+    color: transparent;
+    font-weight: 900;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    transition: color ease .3s;
+
+  }
+
+  input[type='checkbox']:checked + .boll-color:before {
+    color: #FFFFFF;
+    border-color: #000;
+  }
+
+  .red {
+    background-color: $color-filter-red;
+  }
+
+  .orange {
+    background-color: $color-filter-orange;
+  }
+
+  .yullow {
+    background-color: $color-filter-yellow;
+  }
+
+  .green {
+    background-color: $color-filter-green;
+  }
+
+  .blue {
+    background-color: $color-filter-blue;
+  }
+
+  .purpure {
+    background-color: $color-filter-purpur;
+  }
+
+  .grey {
+    background-color: $color-filter-grey;
+  }
+
+  .grey2 {
+    background-color: $color-filter-grey2;
+  }
+
+}
+
+//view-btn
+.view-btn a:nth-child(1) {
+  color: #FFFFFF;
+}
+
+.item-btn {
+  border-radius: 30px;
+  font-size: 11px;
+  padding: 5px 12px;
+  border: 1px solid #D0D0D0;
+}
+
+.active-link__filter {
+  background: #497952;
+}
+
+.list-number__next {
+  ul li a {
+    font-size: 11px;
+  }
+
+  ul li {
+    margin-right: 12px;
+  }
+
+  .active-link_item {
+    background: #E5E5E5;
+    border-radius: 30px;
+    padding: 2px 13px;
+  }
+
+}
+
+
+.title-catalog {
+  font-size: 11px;
+  line-height: 22px;
+  font-weight: 400;
+  max-width: 535px;
+}
+
+.list-number__next {
+  margin-top: 46px;
+}
+
+.block-info {
+  margin-top: 46px;
+
+
+}
+
+.title-discount-f{
+  font-size: 36px;
+  p{
+    color: #497952;
+  }
+}
+
+.title-discount-d{
+  font-size: 14px;
+  line-height: 17px;
+  color: #535353;
+}
+
+//footer-catalog
+.footer{
+
+}
+
+@media screen and (max-width:960px ){
+  .view-filter{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .item-1{
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width:720px ){
+  .grid-filter{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
